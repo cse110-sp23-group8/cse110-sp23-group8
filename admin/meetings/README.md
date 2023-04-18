@@ -1,1 +1,0 @@
-This is the folder we use to store our meeting minutes.
