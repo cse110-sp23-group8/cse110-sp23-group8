@@ -12,7 +12,7 @@ Please avoid unsuitable or controversial topics while working with the group.
 
 This contract is meant to ensure the success of our group in all of the collaborative work we perform together, for the extent of our enrollment in this course.
 
-As a member of Great Team 8, you are expected to abide by the standards of the group. This includes following the rules laid out above. 
+As a member of Great Team 8, you are expected to abide by the standards of the group. This includes the rules laid out above. 
 
 Additionally, each member is compelled to follow these standards for the duration of their membership in Team 8. This list is by no means exhaustive, and team members are generally expected to comport with the expectations typical of UCSD students:
 
@@ -28,6 +28,6 @@ Additionally, each member is compelled to follow these standards for the duratio
                                       undivided effort, as well as actively participate in group discussions and decision-making processes. If they are unable to participate in-person, they will do so via Slack or Zoom. We will work together to ensure that all group members have the opportunity to contribute significantly to the project.
 6. Deadlines: We will adhere to all project deadlines and work together to ensure 
               that all project milestones are met. We will inform the group in advance if we are unable to meet a deadline, and we will work together to find a solution. It goes without saying that each deadline is implemented to safeguard the grade of each team member, so self-imposed deadlines must be taken seriously to this end.
-              
+
 As a signatory, you acknowledge and will uphold all of the standards outlined above:
 [Add your name here]
