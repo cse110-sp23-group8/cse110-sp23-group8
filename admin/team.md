@@ -1,6 +1,7 @@
 # The Great 8 Team
 
 We're a team of dedicated and driven UCSD CSE 110 students working on honing our software developement skills.
+![Image](https://github.com/cse110-sp23-group8/cse110-sp23-group8/blob/main/admin/8team.png?raw=true)
 
 ## Values
 
