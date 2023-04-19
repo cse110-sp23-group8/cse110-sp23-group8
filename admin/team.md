@@ -1,6 +1,6 @@
 # The Great 8 Team
 
-We're a team of dedicated and driven UCSD CSE 110 students working on honing our software developement skills.
+We're a team of dedicated and driven UCSD CSE 110 students working on honing our software development skills.
 ![Image](https://github.com/cse110-sp23-group8/cse110-sp23-group8/blob/main/admin/8team.png?raw=true)
 
 ## Values
@@ -19,3 +19,7 @@ We're a team of dedicated and driven UCSD CSE 110 students working on honing our
 ### Zuo Yang
 - I am a mediocre programmer by day and sleeper by night
 - [GitHub Profile](https://github.com/masteryangz)
+
+### Robert Duenckel
+- I'm just a guy who likes programming, playing games, and listening to music. 
+- [GitHub Profile](https://github.com/World1014)
