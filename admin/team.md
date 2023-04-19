@@ -15,3 +15,7 @@ We're a team of dedicated and driven UCSD CSE 110 students working on honing our
 ### Tyler Flar
 - I am a programmer by day and artist by night.
 - [GitHub Profile](https://github.com/TylerFlar)
+
+### Zuo Yang
+- I am a mediocre programmer by day and sleeper by night
+- [GitHub Profile](https://github.com/masteryangz)
