@@ -13,7 +13,7 @@ We're a team of dedicated and driven UCSD CSE 110 students working on honing our
 ## Roster
 
 ### Tyler Flar
-- I am a programmer by day and artist by night.
+- I'm too tired to write a better description
 - [GitHub Profile](https://github.com/TylerFlar)
 
 ### Zuo Yang
