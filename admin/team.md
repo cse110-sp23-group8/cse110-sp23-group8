@@ -23,3 +23,7 @@ We're a team of dedicated and driven UCSD CSE 110 students working on honing our
 ### Robert Duenckel
 - I'm just a guy who likes programming, playing games, and listening to music. 
 - [GitHub Profile](https://github.com/World1014)
+
+### Chengtao Wu
+- I like play video game
+- [GitHub Profile](https://github.com/pootis2)
