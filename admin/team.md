@@ -43,3 +43,7 @@ We're a team of dedicated and driven UCSD CSE 110 students working on honing our
 ### Duanhui Li
 - I like eating, hanging out with friends, and traveling.
 - [GitHub Profile](https://github.com/Spriteson)
+
+### Marcelo Shen
+- I like thinking about what I like when there are many cool things to like.
+- [GitHub Profile](https://github.com/dowhep)
