@@ -27,3 +27,7 @@ We're a team of dedicated and driven UCSD CSE 110 students working on honing our
 ### Chengtao Wu
 - I like play video game
 - [GitHub Profile](https://github.com/pootis2)
+
+### Andrew Masek
+- I like making things, reading, cooking, playing games, & listening to 2000's pop.
+- [GitHub Profile](https://github.com/portoaj)
