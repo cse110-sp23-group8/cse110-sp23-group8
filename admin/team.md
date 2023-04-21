@@ -47,3 +47,7 @@ We're a team of dedicated and driven UCSD CSE 110 students working on honing our
 ### Marcelo Shen
 - I like thinking about what I like when there are many cool things to like.
 - [GitHub Profile](https://github.com/dowhep)
+
+### Xander Hinrichsen
+- #1 *"Top Gun: Maverick"* enjoyer, bowling, 80's music, code 
+- [GitHub Profile](https://github.com/Xander-Hinrichsen)
