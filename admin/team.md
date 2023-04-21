@@ -35,3 +35,7 @@ We're a team of dedicated and driven UCSD CSE 110 students working on honing our
 ### Andrew Pan
 - I like exploring new places, eating at new restuarants, and having fun!
 - [GitHub Profile](https://github.com/pandrew99)
+
+### Duanhui Li
+- I like eating, hanging out with friends, and traveling.
+- [GitHub Profile](https://github.com/Spriteson)
