@@ -31,3 +31,7 @@ We're a team of dedicated and driven UCSD CSE 110 students working on honing our
 ### Andrew Masek
 - I like making things, reading, cooking, playing games, & listening to 2000's pop.
 - [GitHub Profile](https://github.com/portoaj)
+
+### Andrew Pan
+- I like exploring new places, eating at new restuarants, and having fun!
+- [GitHub Profile](https://github.com/pandrew99)
