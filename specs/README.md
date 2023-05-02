@@ -1,1 +1,0 @@
-This is the folder we use to hold our project specs.
