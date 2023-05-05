@@ -37,7 +37,7 @@ N/A
 N/A
 
 ## Decisions Made
-1. **Decision:** SEE {insert link here} 
+1. **Decision:** SEE https://miro.com/welcomeonboard/bUhpOTl1M2NRaGlVWmRtVzFXcFhsT0R4WFRBZDZlTmFaNFQ3bXQ5dDhXclUzR3dXUHkwQ2RPdHc5SHZqY0kxWHwzNDU4NzY0NTUzMTczMjEzOTY3fDI=?share_link_id=142966247673
    
 
 ---
