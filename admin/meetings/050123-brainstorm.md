@@ -6,7 +6,7 @@
 
 ## Meeting Details
 
-* **Meeting Type:** Braunstorm
+* **Meeting Type:** Brainstorm
 * **Date & Time:**: May 1st, 2023 @ 1:00 PM
 * **Location:** Zoom
 * **Attendees:**
@@ -42,4 +42,4 @@ N/A
 
 ---
 ## Meeting Conclusion
-**Time Finished:** 2:40 PM
+**Time Finished:** 3 PM
