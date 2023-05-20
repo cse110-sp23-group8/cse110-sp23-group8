@@ -18,7 +18,7 @@
     - Zuo Yang
     - Duanhui Li
     - Marcelo Shen
-* **Absentees:* 
+* **Absentees:** 
     - Robert Duenckel
     - Tyler Flar
 ---
