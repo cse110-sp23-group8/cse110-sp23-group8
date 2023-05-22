@@ -13,41 +13,51 @@ We're a team of dedicated and driven UCSD CSE 110 students working on honing our
 ## Roster
 
 ### Tyler Flar
+
 - I'm too tired to write a better description
 - [GitHub Profile](https://github.com/TylerFlar)
 
 ### Jack Montoro
+
 - I like cooking, reading and working out
 - [GitHub Profile](https://github.com/jackmontoro)
 
 ### Zuo Yang
+
 - I am a mediocre programmer by day and sleeper by night
 - [GitHub Profile](https://github.com/masteryangz)
 
 ### Robert Duenckel
-- I'm just a guy who likes programming, playing games, and listening to music. 
+
+- I'm just a guy who likes programming, playing games, and listening to music.
 - [GitHub Profile](https://github.com/World1014)
 
 ### Chengtao Wu
+
 - I like play video game
 - [GitHub Profile](https://github.com/pootis2)
 
 ### Andrew Masek
+
 - I like making things, reading, cooking, playing games, & listening to 2000's pop.
 - [GitHub Profile](https://github.com/portoaj)
 
 ### Andrew Pan
+
 - I like exploring new places, eating at new restuarants, and having fun!
 - [GitHub Profile](https://github.com/pandrew99)
 
 ### Duanhui Li
+
 - I like eating, hanging out with friends, and traveling.
 - [GitHub Profile](https://github.com/Spriteson)
 
 ### Marcelo Shen
+
 - I like thinking about what I like when there are many cool things to like.
 - [GitHub Profile](https://github.com/dowhep)
 
 ### Xander Hinrichsen
-- #1 *"Top Gun: Maverick"* enjoyer, bowling, 80's music, code 
+
+- #1 _"Top Gun: Maverick"_ enjoyer, bowling, 80's music, code
 - [GitHub Profile](https://github.com/Xander-Hinrichsen)
