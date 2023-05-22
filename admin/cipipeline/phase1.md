@@ -14,7 +14,7 @@ We decided to organize our pipeline so that every push to main and pull request 
 
 Here is a current diagram representing the features of the pipeline that we have implemented so far:
 
-![pipeline diagram](admin/cipipeline/phase1.drawio.png)
+![pipeline diagram](/admin/cipipeline/phase1.drawio.png)
 
 ## Working Features (What has been implemented and what we have left)
 
