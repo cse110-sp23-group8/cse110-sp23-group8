@@ -1,0 +1,24 @@
+{
+  "name": "cse110-sp23-group8",
+  "version": "0.0.1",
+  "description": "UCSD CSE110 project for group 8",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cse110-sp23-group8/cse110-sp23-group8.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cse110-sp23-group8/cse110-sp23-group8/issues"
+  },
+  "homepage": "https://github.com/cse110-sp23-group8/cse110-sp23-group8#readme",
+  "devDependencies": {
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1"
+  }
+}
