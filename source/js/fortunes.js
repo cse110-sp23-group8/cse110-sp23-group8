@@ -6,6 +6,7 @@ var Button2 = document.getElementById("answer-2");
 var Button3 = document.getElementById("answer-3");
 var Button4 = document.getElementById("answer-4");
 var AddButton = document.getElementById("add");   // I suggest add a add button
+var selector = 'good';
 const fortunes = {
     good: {
         message: [
@@ -61,7 +62,7 @@ const fortunes = {
             'Nothing is impossible to a willing heart.',
             'Dont worry about money. The best things in life are free.',
             'Dont pursue happiness, create it.',
-        ]
+        ],
     }, 
   
     neutral: {
@@ -99,7 +100,7 @@ const fortunes = {
             'A small act of kindness will brighten your day.',
             'You will overcome challenges with resilience and strength.',
             'A new friendship will blossom.',
-        ]
+        ],
     },
     romantic: {
         message: [
@@ -133,7 +134,7 @@ const fortunes = {
             'A surprise romantic gesture will sweep you off your feet.',
             'You will be surrounded by love and affection from those closest to you.',
             'You and your partner will embark on a romantic adventure together.',
-        ]
+        ],
     },
   
     bad: {
@@ -174,7 +175,7 @@ const fortunes = {
             'You will lose something valuable and irreplaceable.',
             'Regret will haunt your next decision.',
             'Misfortune will follow you wherever you go.',
-        ]
+        ],
     },
 
     weird: {
@@ -216,28 +217,39 @@ const fortunes = {
             'Beware of fortune cookies that can predict the outcome of a coin toss.',
             'You will encounter a fortune cookie that predicts the temperature of your next cup of tea.',
             'A fortune cookie will reveal a secret message from a parallel universe.',
-        ]
-    }
+        ],
+    },
   };
 
   Button1.addEventListener('click', function(){
     currentScore = 3;
+    selector = 'romantic';
+    showMessage();
   });
   Button2.addEventListener('click', function(){
     currentScore = 1;
+    selector = 'good';
+    showMessage(2);
   });
   Button3.addEventListener('click', function(){
     currentScore = 0;
+    selector = 'neutral';
+    showMessage();
   });
   Button4.addEventListener('click', function(){
     currentScore = -2;
+    selector = 'bad';
+    showMessage(4);
   });
   AddButton.addEventListener('click', function(){
     fortuneScore += currentScore;
   });
 
   // Function to show the message
-  function showMessage() {
+  function showMessage(num) {
+
+    //I just printed out the message based on the clicked button for now
+    //I also connected the js and html to make this message show up.
 
     // not sure if random give out a good, bad, or netural fortune telling
     //const selectedFortune = // TODO
@@ -246,4 +258,29 @@ const fortunes = {
     //const fortuneData = fortunes[selectedFortune];
     //const randomIndex = Math.floor(Math.random() * fortuneData.message.length);
     //const randomMessage = fortuneData.message[randomIndex];
+    const messageElement = document.getElementById("response");
+    const selectedFortune = fortunes[selector];
+    const randomIndex = Math.floor(Math.random() * selectedFortune.message.length);
+    const randomMessage = selectedFortune.message[randomIndex];
+    messageElement.textContent = typeOutMessage(randomMessage);
+    
   }
+
+  // type out the message
+  function typeOutMessage(message) {
+    const messageElement = document.getElementById("response");
+  
+    let index = -2;
+    const typingSpeed = 30; // The delay (in milliseconds) between typing each character
+  
+    function typeNextCharacter() {
+      if (index < message.length) {
+        messageElement.textContent += message.charAt(index);
+        index++;
+        setTimeout(typeNextCharacter, typingSpeed);
+      }
+    }
+  
+    typeNextCharacter();
+  }
+  
