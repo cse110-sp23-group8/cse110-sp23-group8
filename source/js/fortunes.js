@@ -1,4 +1,11 @@
 // fortune objects
+var fortuneScore = 0;       // this ditermines the final fortune telling
+var currentScore;           // this depend on the current choice.
+var Button1 = document.getElementById("answer-1");
+var Button2 = document.getElementById("answer-2");
+var Button3 = document.getElementById("answer-3");
+var Button4 = document.getElementById("answer-4");
+var AddButton = document.getElementById("add");   // I suggest add a add button
 const fortunes = {
     good: {
         message: [
@@ -66,6 +73,11 @@ const fortunes = {
             'You will read this fortune.',
         ]
     },
+    romantic: {
+        message: [
+            // TODO, look for some romantic fortune telling
+        ]
+    },
   
     bad: {
         message: [
@@ -80,10 +92,11 @@ const fortunes = {
             'You have made some enemies who are plotting against you.',
             'You will lose something valuable in the near future.',
             'You will regret your next decision.',
+            // add more if u want
         ]
     },
 
-    easter_egg: {
+    weird: {
         message: [
             'Help! I am being held prisoner in a fortune cookie factory',
             'Opps... Wrong cookie.',
@@ -91,10 +104,27 @@ const fortunes = {
             'Run!!!',   // when this shows up, maybe add some feature?
             'Erm… Is this good?',
             'You have just eaten a poisoned cookie',
+            //add more if u want
         ]
     }
-
   };
+
+  Button1.addEventListener('click', function(){
+    currentScore = 3;
+  });
+  Button2.addEventListener('click', function(){
+    currentScore = 1;
+  });
+  Button3.addEventListener('click', function(){
+    currentScore = 0;
+  });
+  Button4.addEventListener('click', function(){
+    currentScore = -2;
+  });
+  AddButton.addEventListener('click', function(){
+    fortuneScore += currentScore;
+  });
+
   // Function to show the message
   function showMessage() {
 
@@ -106,4 +136,3 @@ const fortunes = {
     //const randomIndex = Math.floor(Math.random() * fortuneData.message.length);
     //const randomMessage = fortuneData.message[randomIndex];
   }
-
