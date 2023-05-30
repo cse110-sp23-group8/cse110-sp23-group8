@@ -1,13 +1,15 @@
+#front-page,
+#meal-size,
+#option-1,
+#option-2,
+#option-3,
+#fortune-cookie-reveal,
+#fortune {
+    display: none;
+}
+
 #front-page {
-  display: none;
-}
-
-#settings {
-  display: none;
-}
-
-#meal-size {
-  display: none;
+    display: block; /* Show only the front page at first */
 }
 
 
