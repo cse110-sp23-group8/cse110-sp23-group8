@@ -2,4 +2,4 @@
 
 Deciders Involved: Jack Montoro, Andrew Pan, Marcello Shen
 
-![designDiagram](source/imgs/Design Diagram.png)
+![designDiagram](source/imgs/Design_Diagram.png)
