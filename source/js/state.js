@@ -3,7 +3,8 @@ import gameObject from "./fortunes.js";
 let game;
 let level;
 
-const pages = ['front-page', 'meal-size', 'option-1', 'option-2', 'option-3', 'fortune-cookie-reveal', 'fortune'];
+const pages = ['front-page', 'meal-size', 'side', 'entree-1', 'entree-2', 'entree-3', 'fortune-cookie-reveal', 'fortune'];
+const MealSrcs = ['source/imgs/bowl.png', 'source/imgs/plate.png', 'source/imgs/large plate.png'];
 
 function hideAllPages() {
     pages.forEach(page => document.getElementById(page).style.display = 'none');
@@ -30,13 +31,19 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     ['bowl', 'plate', 'large-plate'].forEach((id, index) => {
         addClickEvent(id, () => {
-            level = index + 1;
+            //bowl = 0 + 2 (side + entree), plate = 1 + 2 (side + 2 entrees), large = 2 + 2 (side + 3 entrees)
+            level = index + 2;
             hideAllPages();
-            document.getElementById('option-1').style.display = 'block';
+            document.getElementById('side').style.display = 'block';
+            let mealImages = document.getElementsByClassName('current-item');
+            console.log(mealImages);
+            for (let i = 0; i < mealImages.length; i++) {
+                mealImages[i].src = MealSrcs[index];
+            }
         });
     });
 
-    for (let i = 1; i <= 3; i++) {
+    for (let i = 1; i <= 4; i++) {
         for (let j = 1; j <= 4; j++) {
             addClickEvent(`option-${i}-${j}`, () => {
                 switch (j) {
@@ -54,7 +61,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 if (i === level) {
                     document.getElementById('fortune-cookie-reveal').style.display = 'block';
                 } else {
-                    document.getElementById(`option-${i + 1}`).style.display = 'block';
+                    document.getElementById(`entree-${i}`).style.display = 'block';
                 }
             });
         }
