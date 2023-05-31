@@ -5,13 +5,12 @@
 #option-3,
 #fortune-cookie-reveal,
 #fortune {
-    display: none;
+  display: none;
 }
 
 #front-page {
-    display: block; /* Show only the front page at first */
+  display: block; /* Show only the front page at first */
 }
-
 
 body {
   font-family: Arial, sans-serif;
@@ -108,7 +107,8 @@ button:hover {
   margin-top: 40px;
 }
 
-#user-info label, #user-info input {
+#user-info label,
+#user-info input {
   width: 100%;
   margin: 5px 0;
 }

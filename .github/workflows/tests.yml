@@ -1,4 +1,3 @@
-
 name: Tests
 
 on:
@@ -9,12 +8,11 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Run Jest
-      uses: stefanoeb/jest-action@1.0.3
-      with:
-        jestArgs: /path/to/my.test.js
+      - uses: actions/checkout@v1
+      - name: Run Jest
+        uses: stefanoeb/jest-action@1.0.3
+        with:
+          jestArgs: /path/to/my.test.js
