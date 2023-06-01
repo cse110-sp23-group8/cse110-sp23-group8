@@ -2,6 +2,7 @@ import gameObject from "./fortunes.js";
 
 let game;
 let level;
+let click = false;
 
 const pages = ['front-page', 'meal-size', 'side', 'entree-1', 'entree-2', 'entree-3', 'fortune-cookie-reveal', 'fortune'];
 const MealSrcs = ['source/imgs/bowl.png', 'source/imgs/plate.png', 'source/imgs/large plate.png'];
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         document.getElementById('meal-size').style.display = 'block';
         const messageElement = document.getElementById("fortune-text");
         messageElement.textContent = '';
+        click = true;
     });
 
     ['bowl', 'plate', 'large-plate'].forEach((id, index) => {
@@ -68,6 +70,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
 
     addClickEvent('open', () => {
+        click = false;
         hideAllPages();
         document.getElementById('fortune').style.display = 'block';
         showMessage();
@@ -87,6 +90,9 @@ function typeOutMessage(message) {
     const typingSpeed = 30; // The delay (in milliseconds) between typing each character
 
     function typeNextCharacter() {
+        if (click){
+            return;
+        }
         if (index < message.length) {
             messageElement.textContent += message.charAt(index);
             index++;
