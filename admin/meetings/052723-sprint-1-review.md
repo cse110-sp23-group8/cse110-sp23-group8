@@ -30,12 +30,11 @@
 1. Clarifications on the design of the interface
 1. Distribution of work for the next sprint
 
-
 ## Old Business
 
 1.Progress on the coding part was reported by Chengtao Wu and Duanhui Li
-1. Tyler Flar confirmed the format of choices for the game
 
+1. Tyler Flar confirmed the format of choices for the game
 
 ## New Business
 
@@ -43,10 +42,9 @@
 1. Discussed the potential of including a "How to play" option in the interface.
 1. Jack Montoro suggested setting up tasks for working on HTML in the next sprint.
 
-
 ## Items Not Discussed
 
-1. 
+1.
 
 ## Meeting Conclusion
 

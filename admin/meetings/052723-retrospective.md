@@ -38,7 +38,7 @@
 
 ## Items Not Discussed
 
-1. N/A 
+1. N/A
 
 ## Meeting Conclusion
 
