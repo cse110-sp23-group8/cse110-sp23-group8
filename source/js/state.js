@@ -15,7 +15,7 @@ const pages = [
 
 function hideAllPages() {
   pages.forEach(
-    (page) => (document.getElementById(page).style.display = "none")
+    (page) => (document.getElementById(page).style.display = "none"),
   );
 }
 
