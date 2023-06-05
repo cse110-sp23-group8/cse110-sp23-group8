@@ -19,6 +19,11 @@ const MealSrcs = [
   "source/imgs/plate.png",
   "source/imgs/large plate.png",
 ];
+const AudioSrcs = [
+  "source/music/ChoiceSelect1b.wav",
+  "source/music/ChoiceSelect2b.wav",
+  "source/music/ChoiceSelect3b.wav",
+];
 
 function hideAllPages() {
   pages.forEach(
@@ -39,6 +44,7 @@ window.addEventListener("DOMContentLoaded", () => {
     hideAllPages();
     document.getElementById("meal-size").style.display = "block";
     audio.src = 'source/music/ChoicesV1.1.wav';
+    audio.autoplay = true;
   });
 
   addClickEvent("play-again", () => {
@@ -52,6 +58,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   ["bowl", "plate", "large-plate"].forEach((id, index) => {
     addClickEvent(id, () => {
+      let soundEffect = new Audio(AudioSrcs[Math.floor(Math.random() * 3)]);
+      soundEffect.play();
       //bowl = 0 + 2 (side + entree), plate = 1 + 2 (side + 2 entrees), large = 2 + 2 (side + 3 entrees)
       level = index + 2;
       hideAllPages();
@@ -78,6 +86,8 @@ window.addEventListener("DOMContentLoaded", () => {
             game.incrementWeird();
             break;
         }
+        let soundEffect = new Audio(AudioSrcs[Math.floor(Math.random() * 3)]);
+        soundEffect.play();
         hideAllPages();
         if (i === level) {
           document.getElementById("fortune-cookie-reveal").style.display =
@@ -91,6 +101,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   addClickEvent("open", () => {
     click = false;
+    let soundEffect = new Audio(AudioSrcs[Math.floor(Math.random() * 3)]);
+    soundEffect.play();
     hideAllPages();
     document.getElementById("fortune").style.display = "block";
     showMessage();
