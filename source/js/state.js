@@ -31,10 +31,14 @@ function addClickEvent(id, callback) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
+  const audio = new Audio();
+  audio.src = './source/music/FortuneV1.1.wav';
+  audio.autoplay = true;
   addClickEvent("play", () => {
     game = new gameObject();
     hideAllPages();
     document.getElementById("meal-size").style.display = "block";
+    audio.src = 'source/music/ChoicesV1.1.wav';
   });
 
   addClickEvent("play-again", () => {
