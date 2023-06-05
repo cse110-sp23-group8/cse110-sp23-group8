@@ -37,8 +37,12 @@ function addClickEvent(id, callback) {
 
 window.addEventListener("DOMContentLoaded", () => {
   const audio = new Audio();
-  audio.src = './source/music/FortuneV1.1.wav';
-  audio.autoplay = true;
+
+  window.onload = function() {
+    audio.src = 'source/music/FortuneV1.1.wav';
+    audio.play();
+  };
+  
   addClickEvent("play", () => {
     game = new gameObject();
     hideAllPages();
