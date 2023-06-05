@@ -3,8 +3,6 @@ import gameObject from "./fortunes.js";
 let game;
 let level;
 let click = false;
-const audio = document.getElementById('bg-music');
-audio.autoplay = true;
 
 const pages = [
   "front-page",
