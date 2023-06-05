@@ -22,7 +22,7 @@ const MealSrcs = [
 
 function hideAllPages() {
   pages.forEach(
-    (page) => (document.getElementById(page).style.display = "none")
+    (page) => (document.getElementById(page).style.display = "none"),
   );
 }
 
@@ -30,7 +30,7 @@ function addClickEvent(id, callback) {
   document.getElementById(id).addEventListener("click", callback);
 }
 
-window.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("DOMContentLoaded", () => {
   addClickEvent("play", () => {
     game = new gameObject();
     hideAllPages();
@@ -93,7 +93,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
-function showMessage(num) {
+function showMessage() {
   const message = game.getFortune();
   typeOutMessage(message);
 }
