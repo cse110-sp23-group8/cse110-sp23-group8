@@ -1,6 +1,6 @@
 const functions = require("../source/js/fortunes.js");
 
-let testGame = new gameObject();
+let testGame = new functions.gameObject();
 
 // Test incrementScore
 
@@ -53,3 +53,27 @@ test("Score should not be 1", () => {
     expect(testGame.score == 1).toBe(false);
 });
 
+// Test incrementWeird
+testGame.incrementWeird();
+
+test("Weird score should be 1", () => {
+    expect(testGame.weird == 1).toBe(true);
+});
+
+testGame.incrementWeird();
+
+test("Weird score should be 2", () => {
+    expect(testGame.weird == 2).toBe(true);
+});
+
+testGame.incrementWeird();
+
+test("Weird score should not be 2", () => {
+    expect(testGame.weird == 2).toBe(false);
+});
+
+testGame.incrementWeird();
+
+test("Weird score should not be 3", () => {
+    expect(testGame.weird == 3).toBe(false);
+});
