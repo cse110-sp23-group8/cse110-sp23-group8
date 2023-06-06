@@ -1,6 +1,6 @@
-const functions = require("../source/js/fortunes.js");
+import { gameObject } from "../source/js/fortunes.js";
 
-let testGame = new functions.gameObject();
+let testGame = new gameObject();
 
 // Test incrementScore
 
