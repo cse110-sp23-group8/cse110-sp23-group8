@@ -1,4 +1,4 @@
-import { gameObject } from "../source/js/fortunes.js";
+import gameObject from "../source/js/fortunes.js";
 
 let testGame = new gameObject();
 
