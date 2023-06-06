@@ -1,4 +1,5 @@
 // fortune objects
+module.exports = gameObject;
 class gameObject {
   constructor() {
     this.score = 0;
