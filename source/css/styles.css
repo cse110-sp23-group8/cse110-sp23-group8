@@ -16,8 +16,12 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #c02827;
+  background: linear-gradient(to top, #c02727, #c0272768), url("../imgs/order.jpg") no-repeat top center;
+  background-size: cover;
+  backdrop-filter: blur(3px);
 }
+
+
 
 .container {
   display: flex;
