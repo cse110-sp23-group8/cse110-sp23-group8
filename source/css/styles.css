@@ -8,6 +8,9 @@
 #fortune {
   display: none;
 }
+#nutrition-facts {
+  display: none;
+}
 
 #front-page {
   display: block; /* Show only the front page at first */

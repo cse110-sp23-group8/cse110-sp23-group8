@@ -13,6 +13,7 @@ const pages = [
   "entree-3",
   "fortune-cookie-reveal",
   "fortune",
+  "nutrition-facts",
 ];
 const MealSrcs = [
   "source/imgs/bowl.png",
@@ -113,7 +114,15 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("fortune").style.display = "block";
     showMessage();
   });
+
+addClickEvent("show-nutrition", () => {
+  click = false;
+  choiceAudio();
+  hideAllPages();
+  document.getElementById("nutrition-facts").style.display = "block";
 });
+});
+
 
 function showMessage() {
   const message = game.getFortune();
