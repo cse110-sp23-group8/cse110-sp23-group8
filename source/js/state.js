@@ -106,12 +106,12 @@ const nutritionUnits = {
   "sodium": "mg",
 }
 const nutritionDaily = {
-  "calories": 360,
-  "fat": 19,
-  "carbohydrates": 36,
-  "protein": 13,
-  "sugars": 14,
-  "sodium": 240
+  "calories": 2000,
+  "fat":78,
+  "carbohydrates": 325,
+  "protein": 75,
+  "sugars": 30,
+  "sodium": 2300
 }
 let game;
 let level;
