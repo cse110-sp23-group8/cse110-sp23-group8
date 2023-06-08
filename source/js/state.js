@@ -217,12 +217,17 @@ window.addEventListener("DOMContentLoaded", () => {
     showMessage();
   });
 
-addClickEvent("show-nutrition", () => {
-  click = false;
-  choiceAudio();
-  hideAllPages();
-  document.getElementById("nutrition-facts").style.display = "block";
-});
+  addClickEvent("show-nutrition", () => {
+    click = false;
+    choiceAudio();
+    hideAllPages();
+    document.getElementById("nutrition-facts").style.display = "block";
+    for (let key in game.nutrition) {
+      console.log(key);
+      document.getElementById(key).textContent = game.nutrition[key]; 
+    }
+
+  });
 });
 
 
