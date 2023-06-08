@@ -113,7 +113,11 @@ window.addEventListener("DOMContentLoaded", () => {
             game.incrementWeird();
             break;
         }
-        let element = document.querySelector(`#option-${i}-${j}`);
+        let j_fixed = j;
+        if (j == 4) {
+          j_fixed = Math.floor(Math.random() * 3) + 1;
+        }
+        let element = document.querySelector(`#option-${i}-${j_fixed}`);
         let dishName = element.textContent.trim();
         game.cumulateNutritions(nutritions[dishName])
         choiceAudio();
