@@ -1,6 +1,7 @@
 import gameObject from "./fortunes.js";
-const nutritions = await $.getJSON("../data/nutrition.json");
-console.log(nutritions);
+const nutritions = await fetch("source/data/nutrition.json")
+  .then(response => response.json())
+  .then(json => console.log(json));
 let game;
 let level;
 let click = false;
@@ -146,7 +147,7 @@ function typeOutMessage(message) {
     }
     if (index < message.length) {
       messageElement.textContent += message.charAt(index);
-      index++;
+      index++;      
       setTimeout(typeNextCharacter, typingSpeed);
     }
   }
