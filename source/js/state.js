@@ -97,6 +97,14 @@ const nutritions = {
       "sodium": 240
   }
 };
+const nutritionUnits = {
+  "calories": "",
+  "fat": "g",
+  "carbohydrates": "g",
+  "protein": "g",
+  "sugars": "g",
+  "sodium": "mg",
+}
 let game;
 let level;
 let click = false;
@@ -224,7 +232,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("nutrition-facts").style.display = "block";
     for (let key in game.nutrition) {
       console.log(key);
-      document.getElementById(key).textContent = game.nutrition[key]; 
+      document.getElementById(key).textContent = game.nutrition[key] + nutritionUnits[key]; 
     }
   });
 });
