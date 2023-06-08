@@ -1,7 +1,17 @@
 const gameObject = require("./fortunes.js");
 
-module.exports = { game, pages, MealSrcs, hideAllPages, addClickEvent, 
-                   addClickEvent, showMessage, typeOutMessage };
+module.exports = {
+  game,
+  level,
+  click,
+  pages,
+  MealSrcs,
+  hideAllPages,
+  addClickEvent,
+  addClickEvent,
+  showMessage,
+  typeOutMessage,
+};
 
 let game;
 let level;
