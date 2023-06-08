@@ -194,3 +194,8 @@ h2 {
 tr:nth-child(even) {
   background-color: #f9f9f9;
 }
+
+#nutrition-footnote {
+  font-size: 80%;
+  font-style: italic;
+}
