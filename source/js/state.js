@@ -226,7 +226,6 @@ window.addEventListener("DOMContentLoaded", () => {
       console.log(key);
       document.getElementById(key).textContent = game.nutrition[key]; 
     }
-
   });
 });
 
