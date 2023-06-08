@@ -203,6 +203,14 @@ class gameObject {
     };
   }
 
+  getScore() {
+    return this.score;
+  }
+
+  getWeird() {
+    return this.weird;
+  }
+
   incrementScore() {
     this.score++;
   }
@@ -245,4 +253,5 @@ class gameObject {
   }
 }
 
-export default gameObject;
+module.exports = gameObject;
+//export default gameObject;

@@ -1,79 +1,119 @@
-import gameObject from "../source/js/fortunes.js";
-
-let testGame = new gameObject();
+const gameObject = require("../source/js/fortunes.js");
 
 // Test incrementScore
 
-testGame.incrementScore();
-
 test("Score should be 1", () => {
-    expect(testGame.score == 1).toBe(true);
+    const testGame = new gameObject();
+    testGame.incrementScore();
+    expect(testGame.getScore()).toBe(1);
 });
 
-testGame.incrementScore();
 
 test("Score should be 2", () => {
-    expect(testGame.score == 2).toBe(true);
+    const testGame = new gameObject();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    expect(testGame.getScore()).toBe(2);
 });
 
-testGame.incrementScore();
+
 
 test("Score should not be 2", () => {
-    expect(testGame.score == 2).toBe(false);
+    const testGame = new gameObject();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    expect(testGame.getScore() == 2).toBe(false);
 });
 
-testGame.incrementScore();
+
 
 test("Score should not be 3", () => {
-    expect(testGame.score == 3).toBe(false);
+    const testGame = new gameObject();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    expect(testGame.getScore() == 3).toBe(false);
 });
 
 // Test decrementScore
-testGame.decrementScore();
 
 test("Score should be 3", () => {
-    expect(testGame.score == 3).toBe(true);
+    const testGame = new gameObject();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    testGame.decrementScore();
+    expect(testGame.getScore() == 3).toBe(true);
 });
-
-testGame.decrementScore();
 
 test("Score should be 2", () => {
-    expect(testGame.score == 2).toBe(true);
+    const testGame = new gameObject();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    testGame.decrementScore();
+    testGame.decrementScore();
+    expect(testGame.getScore() == 2).toBe(true);
 });
-
-testGame.decrementScore();
 
 test("Score should not be 2", () => {
-    expect(testGame.score == 2).toBe(false);
+    const testGame = new gameObject();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    testGame.decrementScore();
+    testGame.decrementScore();
+    testGame.decrementScore();
+    expect(testGame.getScore() == 2).toBe(false);
 });
 
-testGame.decrementScore();
 
 test("Score should not be 1", () => {
-    expect(testGame.score == 1).toBe(false);
+    const testGame = new gameObject();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    testGame.incrementScore();
+    testGame.decrementScore();
+    testGame.decrementScore();
+    testGame.decrementScore();
+    testGame.decrementScore();
+    expect(testGame.getScore() == 1).toBe(false);
 });
 
 // Test incrementWeird
-testGame.incrementWeird();
 
 test("Weird score should be 1", () => {
-    expect(testGame.weird == 1).toBe(true);
+    const testGame = new gameObject();
+    testGame.incrementWeird();
+    expect(testGame.getWeird() == 1).toBe(true);
 });
-
-testGame.incrementWeird();
 
 test("Weird score should be 2", () => {
-    expect(testGame.weird == 2).toBe(true);
+    const testGame = new gameObject();
+    testGame.incrementWeird();
+    testGame.incrementWeird();
+    expect(testGame.getWeird() == 2).toBe(true);
 });
-
-testGame.incrementWeird();
 
 test("Weird score should not be 2", () => {
-    expect(testGame.weird == 2).toBe(false);
+    const testGame = new gameObject();
+    testGame.incrementWeird();
+    testGame.incrementWeird();
+    testGame.incrementWeird();
+    expect(testGame.getWeird() == 2).toBe(false);
 });
 
-testGame.incrementWeird();
-
 test("Weird score should not be 3", () => {
-    expect(testGame.weird == 3).toBe(false);
+    const testGame = new gameObject();
+    testGame.incrementWeird();
+    testGame.incrementWeird();
+    testGame.incrementWeird();
+    testGame.incrementWeird();
+    expect(testGame.getWeird() == 3).toBe(false);
 });

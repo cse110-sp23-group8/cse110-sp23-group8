@@ -1,4 +1,4 @@
-import gameObject from "./fortunes.js";
+const gameObject = require("./fortunes.js");
 
 module.exports = { game, pages, MealSrcs, hideAllPages, addClickEvent, 
                    addClickEvent, showMessage, typeOutMessage }
