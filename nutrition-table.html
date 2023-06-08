@@ -1,123 +1,37 @@
-<!--
-  I did not author this html code
-  it comes from http://jsfiddle.net/thL6j/
-  it is merely a placeholder to show nutritional facts
-  before we implement our own nutritional facts table
--->
 <html>
   <link rel="stylesheet" href="source/css/nutrition-table.css" />
   <body>
-    <div id="nutritionfacts">
-      <table width="242" cellspacing="0" cellpadding="0">
-          <tbody><tr>
-              <td align="center" class="header">Nutrition Facts</td>
-          </tr>
-          <tr>
-              <td><div class="serving">Per <span class="highlighted">180.0g</span> Serving Size</div></td>
-          </tr>
-          <tr style="height: 7px">
-              <td bgcolor="#000000"></td>
-          </tr>
-          <tr>
-              <td style="font-size: 7pt"><div class="line">Amount Per Serving</div></td>
-          </tr>
-          <tr>
-              <td>
-                  <div class="line">
-                  <div class="label">Calories <div class="weight">230</div></div><div style="padding-top: 1px; float: right;" class="labellight">Calories from Fat <div class="weight">56</div></div>
-                  </div>
-              </td>
-          </tr>
-          <tr>
-              <td><div class="line"><div class="dvlabel">% Daily Value<sup>*</sup></div></div></td>
-          </tr>
-          <tr>
-              <td>
-                  <div class="line">
-                  <div class="label">Total Fat <div class="weight">6.2g</div></div>
-                  <div class="dv">10%</div>
-                  </div>
-              </td>
-          </tr>
-                      <tr>
-              <td class="indent">
-                  <div class="line">
-                  <div class="labellight">Saturated Fat <div class="weight">3.5g</div></div>
-                  <div class="dv">17%</div>
-                  </div>
-              </td>
-          </tr>
-                      <tr>
-              <td class="indent">
-                  <div class="line">
-                  <div class="labellight"><i>Trans</i> Fat <div class="weight">0.0g</div></div>
-                  </div>
-              </td>
-          </tr>
-                      <tr>
-              <td>
-                  <div class="line">
-                  <div class="label">Cholesterol <div class="weight">22mg</div></div>
-                  <div class="dv">7%</div>
-                  </div>
-              </td>
-          </tr>
-                      <tr>
-              <td>
-                  <div class="line">
-                  <div class="label">Sodium <div class="weight">618mg</div></div>
-                  <div class="dv">26%</div>
-                  </div>
-              </td>
-          </tr>
-                      <tr>
-              <td>
-                  <div class="line">
-                  <div class="label">Total Carbohydrates <div class="weight">32.2g</div></div>
-                  <div class="dv">11%</div>
-                  </div>
-              </td>
-          </tr>
-                      <tr>
-              <td class="indent">
-                  <div class="line">
-                  <div class="labellight">Dietary Fiber <div class="weight">5.2g</div></div>
-                  <div class="dv">21%</div>
-              </div></td>
-          </tr>
-                      <tr>
-              <td class="indent">
-                  <div class="line">
-                  <div class="labellight">Sugars <div class="weight">3.3g</div></div>
-                  </div>
-              </td>
-          </tr>
-                      <tr>
-              <td>
-                  <div class="line">
-                  <div class="label">Protein <div class="weight">11.4g</div>
-                  </div>
-              </div></td>
-          </tr>
-          <tr style="height: 7px">
-              <td bgcolor="#000000"></td>
-          </tr>
-                      <tr>
-              <td>
-                  <table cellspacing="0" cellpadding="0" border="0" class="vitamins">
-                  <tbody>                   
-                  </tbody></table>
-              </td>
-          </tr>
-                      <tr>
-              <td><div class="line">
-              <div class="labellight">* Based on a regular <a href="#">2000 calorie diet</a>
-              <br><br><i>Nutritional details are an estimate and should only be used as a guide for approximation.</i>
-              </div>
-              </div>
-              </td>
-          </tr>
-      </tbody></table>
+    <div class="nutrition-facts">
+      <table>
+        <tr>
+          <th>Nutrient</th>
+          <th>Amount per serving</th>
+        </tr>
+        <tr>
+          <td>Calories</td>
+          <td id="calories">100</td>
+        </tr>
+        <tr>
+          <td>Protein</td>
+          <td id="protein">5g</td>
+        </tr>
+        <tr>
+          <td>Fat</td>
+          <td id="fat">3g</td>
+        </tr>
+        <tr>
+          <td>Carbohydrates</td>
+          <td id="carbs">15g</td>
+        </tr>
+        <tr>
+          <td>Sugar</td>
+          <td id="sugar">10g</td>
+        </tr>
+        <tr>
+          <td>Sodium</td>
+          <td id="sodium">200mg</td>
+        </tr>
+      </table>
     </div>
   </body>
 </html>

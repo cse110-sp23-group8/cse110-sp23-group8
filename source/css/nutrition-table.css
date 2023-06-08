@@ -1,57 +1,27 @@
-/*
-  I did not author this css code
-  it comes from http://jsfiddle.net/thL6j/
-  it is merely a placeholder to show nutritional facts
-  before we implement our own nutritional facts table
-*/
-#nutritionfacts { 
-  background-color:white; 
-  border:1px solid black; 
-  padding:3px; width:244px; 
+.nutrition-facts {
+  font-family: Arial, sans-serif;
 }
-#nutritionfacts td { 
-  color:black; 
-  font-family:'Arial Black','Helvetica Bold',sans-serif; 
-  font-size:8pt; 
-  padding:0; 
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
-#nutritionfacts td.header { 
-  font-family:'Arial Black','Helvetica Bold',sans-serif; 
-  font-size:28px; 
-  white-space:nowrap; 
-}        
-#nutritionfacts div.label { 
-  float:left; 
-  font-family:'Arial Black','Helvetica Bold',sans-serif; 
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
-#nutritionfacts div.serving { 
-  font-family:Arial,Helvetica,sans-serif; 
-  font-size:8pt; 
-  text-align:center; 
+
+th {
+  background-color: #f2f2f2;
 }
-#nutritionfacts div.weight { 
-  display:inline; 
-  font-family:Arial,Helvetica,sans-serif; 
-  padding-left:1px; 
+
+h2 {
+  margin-top: 0;
 }
-#nutritionfacts div.dv { 
-  display:inline; 
-  float:right; 
-  font-family:'Arial Black','Helvetica Bold',sans-serif; 
-}
-#nutritionfacts table.vitamins td {  
-  font-family:Arial,Helvetica,sans-serif; 
-  white-space:nowrap; 
-  width:33%; 
-}
-#nutritionfacts div.line { 
-  border-top:1px solid black; 
-}
-#nutritionfacts div.labellight { 
-  float:left; 
-  font-family:Arial,Helvetica,sans-serif; 
-}
-#nutritionfacts .highlighted {
-  border:1px dotted grey;
-  padding:2px;
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
