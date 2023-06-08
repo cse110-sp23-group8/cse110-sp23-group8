@@ -92,7 +92,6 @@ window.addEventListener("DOMContentLoaded", () => {
       hideAllPages();
       document.getElementById("side").style.display = "block";
       let mealImages = document.getElementsByClassName("current-item");
-      console.log(mealImages);
       for (let i = 0; i < mealImages.length; i++) {
         mealImages[i].src = MealSrcs[index];
       }
@@ -119,7 +118,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
         let element = document.querySelector(`#option-${i}-${j_fixed}`);
         let dishName = element.textContent.trim();
-        game.cumulateNutritions(nutritions[dishName])
+        game.cumulateNutritions(nutritions[dishName]);
         choiceAudio();
         hideAllPages();
         if (i === level) {
@@ -146,7 +145,7 @@ window.addEventListener("DOMContentLoaded", () => {
     hideAllPages();
     document.getElementById("nutrition-facts").style.display = "block";
     for (let key in game.nutrition) {
-      console.log(key);
+      // console.log(key);
       document.getElementById(key).textContent = game.nutrition[key] + nutritionUnits[key];
       document.getElementById(key+"-prc").textContent = Math.floor(game.nutrition[key] / nutritionDaily[key] * 100) + "%";
     }
