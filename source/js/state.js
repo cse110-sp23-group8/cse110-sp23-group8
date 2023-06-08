@@ -1,5 +1,6 @@
 import gameObject from "./fortunes.js";
-
+const nutritions = await $.getJSON("../data/nutrition.json");
+console.log(nutritions);
 let game;
 let level;
 let click = false;
@@ -25,6 +26,8 @@ const AudioSrcs = [
   "source/music/ChoiceSelect2bV1.1.wav",
   "source/music/ChoiceSelect3bV1.1.wav",
 ];
+
+
 
 function hideAllPages() {
   pages.forEach(
@@ -95,6 +98,7 @@ window.addEventListener("DOMContentLoaded", () => {
             game.incrementWeird();
             break;
         }
+        
         choiceAudio();
         hideAllPages();
         if (i === level) {
