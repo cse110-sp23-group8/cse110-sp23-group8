@@ -3,6 +3,14 @@ class gameObject {
   constructor() {
     this.score = 0;
     this.weird = 0;
+    this.nutrition = {
+      "calories": 0,
+      "fat": 0,
+      "carbohydrates": 0,
+      "protein": 0,
+      "sugars": 0,
+      "sodium": 0
+    };
     this.fortunes = {
       romantic: [
         "You and your partner will embark on a dreamy getaway together.",
@@ -242,6 +250,16 @@ class gameObject {
         ];
       }
     }
+  }
+
+  cumulateNutritions(dish) {
+    this.nutrition.calories += dish.calories;
+    this.nutrition.fat += dish.fat;
+    this.nutrition.carbohydrates += dish.carbohydrates;
+    this.nutrition.protein += dish.protein;
+    this.nutrition.sugars += dish.sugars;
+    this.nutrition.sodium += dish.sodium;
+    console.log(this.nutrition);
   }
 }
 

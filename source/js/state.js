@@ -99,7 +99,9 @@ window.addEventListener("DOMContentLoaded", () => {
             game.incrementWeird();
             break;
         }
-        
+        let element = document.querySelector(`#option-${i}-${j}`);
+        let dishName = element.textContent.trim();
+        game.cumulateNutritions(nutritions[dishName]);
         choiceAudio();
         hideAllPages();
         if (i === level) {
