@@ -1,110 +1,98 @@
-[
-  {
-    "name": "Chow Mein",
-    "calories": 510,
-    "fat": 22,
-    "carbohydrates": 63,
-    "protein": 11,
-    "sugars": 4,
-    "sodium": 940
+{
+  "Chow Mein": {
+      "calories": 510,
+      "fat": 22,
+      "carbohydrates": 63,
+      "protein": 11,
+      "sugars": 4,
+      "sodium": 940
   },
-  {
-    "name": "Fried Rice",
-    "calories": 520,
-    "fat": 15,
-    "carbohydrates": 83,
-    "protein": 11,
-    "sugars": 2,
-    "sodium": 780
+  "Fried Rice": {
+      "calories": 520,
+      "fat": 15,
+      "carbohydrates": 83,
+      "protein": 11,
+      "sugars": 2,
+      "sodium": 780
   },
-  {
-    "name": "Steamed Rice",
-    "calories": 380,
-    "fat": 4.5,
-    "carbohydrates": 82,
-    "protein": 7,
-    "sugars": 0,
-    "sodium": 0
+  "Steamed Rice": {
+      "calories": 380,
+      "fat": 4.5,
+      "carbohydrates": 82,
+      "protein": 7,
+      "sugars": 0,
+      "sodium": 0
   },
-  {
-    "name": "Angus Steak",
-    "calories": 220,
-    "fat": 8,
-    "carbohydrates": 10,
-    "protein": 29,
-    "sugars": 5,
-    "sodium": 810
+  "Angus Steak": {
+      "calories": 220,
+      "fat": 8,
+      "carbohydrates": 10,
+      "protein": 29,
+      "sugars": 5,
+      "sodium": 810
   },
-  {
-    "name": "Beef Broccoli",
-    "calories": 150,
-    "fat": 7,
-    "carbohydrates": 16,
-    "protein": 7,
-    "sugars": 4,
-    "sodium": 440
+  "Beef Broccoli": {
+      "calories": 150,
+      "fat": 7,
+      "carbohydrates": 16,
+      "protein": 7,
+      "sugars": 4,
+      "sodium": 440
   },
-  {
-    "name": "Beijing Beef",
-    "calories": 470,
-    "fat": 23,
-    "carbohydrates": 39,
-    "protein": 24,
-    "sugars": 18,
-    "sodium": 1070
+  "Beijing Beef": {
+      "calories": 470,
+      "fat": 23,
+      "carbohydrates": 39,
+      "protein": 24,
+      "sugars": 18,
+      "sodium": 1070
   },
-  {
-    "name": "Eggplant Tofu",
-    "calories": 190,
-    "fat": 10,
-    "carbohydrates": 18,
-    "protein": 8,
-    "sugars": 6,
-    "sodium": 880
+  "Eggplant Tofu": {
+      "calories": 190,
+      "fat": 10,
+      "carbohydrates": 18,
+      "protein": 8,
+      "sugars": 6,
+      "sodium": 880
   },
-  {
-    "name": "Kung Pao",
-    "calories": 290,
-    "fat": 16,
-    "carbohydrates": 19,
-    "protein": 14,
-    "sugars": 13,
-    "sodium": 810
+  "Kung Pao": {
+      "calories": 290,
+      "fat": 16,
+      "carbohydrates": 19,
+      "protein": 14,
+      "sugars": 13,
+      "sodium": 810
   },
-  {
-    "name": "Mushroom Chicken",
-    "calories": 260,
-    "fat": 11,
-    "carbohydrates": 15,
-    "protein": 27,
-    "sugars": 2,
-    "sodium": 590
+  "Mushroom Chicken": {
+      "calories": 260,
+      "fat": 11,
+      "carbohydrates": 15,
+      "protein": 27,
+      "sugars": 2,
+      "sodium": 590
   },
-  {
-    "name": "Orange Chicken",
-    "calories": 380,
-    "fat": 18,
-    "carbohydrates": 44,
-    "protein": 18,
-    "sugars": 17,
-    "sodium": 620
+  "Orange Chicken": {
+      "calories": 380,
+      "fat": 18,
+      "carbohydrates": 44,
+      "protein": 18,
+      "sugars": 17,
+      "sodium": 620
   },
-  {
-    "name": "Sizzling Shrimp",
-    "calories": 150,
-    "fat": 9,
-    "carbohydrates": 8,
-    "protein": 10,
-    "sugars": 4,
-    "sodium": 280
+  "Sizzling Shrimp": {
+      "calories": 150,
+      "fat": 9,
+      "carbohydrates": 8,
+      "protein": 10,
+      "sugars": 4,
+      "sodium": 280
   },
-  {
-    "name": "Walnut Shrimp",
-    "calories": 360,
-    "fat": 19,
-    "carbohydrates": 36,
-    "protein": 13,
-    "sugars": 14,
-    "sodium": 240
+  "Walnut Shrimp": {
+      "calories": 360,
+      "fat": 19,
+      "carbohydrates": 36,
+      "protein": 13,
+      "sugars": 14,
+      "sodium": 240
   }
-]
+}
