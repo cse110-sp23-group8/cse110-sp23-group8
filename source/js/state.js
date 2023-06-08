@@ -105,6 +105,14 @@ const nutritionUnits = {
   "sugars": "g",
   "sodium": "mg",
 }
+const nutritionDaily = {
+  "calories": 360,
+  "fat": 19,
+  "carbohydrates": 36,
+  "protein": 13,
+  "sugars": 14,
+  "sodium": 240
+}
 let game;
 let level;
 let click = false;
@@ -232,7 +240,8 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("nutrition-facts").style.display = "block";
     for (let key in game.nutrition) {
       console.log(key);
-      document.getElementById(key).textContent = game.nutrition[key] + nutritionUnits[key]; 
+      document.getElementById(key).textContent = game.nutrition[key] + nutritionUnits[key];
+      document.getElementById(key+"-prc").textContent = Math.floor(game.nutrition[key] / nutritionDaily[key] * 100) + "%";
     }
   });
 });
