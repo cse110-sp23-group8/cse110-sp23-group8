@@ -197,9 +197,70 @@
           </div>
           <h2 id="fortune-text"></h2>
           <div id="plate-button-container">
+            <button id="show-nutrition">Show Nutrition</button>
+          </div>
+        </div>
+        <!--nutrition page-->
+        <div id="nutrition-facts">
+          <div class="mini-header">
+            <img
+              id="mini-logo"
+              src="source/imgs/panda.png"
+              alt="Panda Express Logo"
+            />
+            <h2>Nutrional-Facts</h2>
+          </div>
+          <div class="center">
+            <!--nutriton table-->
+            <div class="nutrition-facts">
+              <table>
+                <tr>
+                  <th>Nutrient</th>
+                  <th>Amount per serving</th>
+                  <th>% Daily Value</th>
+                </tr>
+                <tr>
+                  <td>Calories</td>
+                  <td id="calories">100</td>
+                  <td id="calories-prc">0%</td>
+                </tr>
+                <tr>
+                  <td>Protein</td>
+                  <td id="protein">5g</td>
+                  <td id="protein-prc">0%</td>
+                </tr>
+                <tr>
+                  <td>Fat</td>
+                  <td id="fat">3g</td>
+                  <td id="fat-prc">0%</td>
+                </tr>
+                <tr>
+                  <td>Carbohydrates</td>
+                  <td id="carbohydrates">15g</td>
+                  <td id="carbohydrates-prc">0%</td>
+                </tr>
+                <tr>
+                  <td>Sugar</td>
+                  <td id="sugars">10g</td>
+                  <td id="sugars-prc">0%</td>
+                </tr>
+                <tr>
+                  <td>Sodium</td>
+                  <td id="sodium">200mg</td>
+                  <td id="sodium-prc">0%</td>
+                </tr>
+              </table>
+              <p id="nutrition-footnote">
+                *Daily Value% is based on a 2000 daily calory diet
+              </p>
+            </div>
+            <!--end nutrition table-->
+          </div>
+          <div id="plate-button-container">
             <button id="play-again">Play Again</button>
           </div>
         </div>
+        <!--end nutrition page-->
       </main>
     </div>
     <script type="module" src="./source/js/state.js"></script>

@@ -1,5 +1,21 @@
 import gameObject from "./fortunes.js";
-
+import nutritions from "../data/nutrition.js";
+const nutritionUnits = {
+  calories: "",
+  fat: "g",
+  carbohydrates: "g",
+  protein: "g",
+  sugars: "g",
+  sodium: "mg",
+};
+const nutritionDaily = {
+  calories: 2000,
+  fat: 78,
+  carbohydrates: 325,
+  protein: 75,
+  sugars: 30,
+  sodium: 2300,
+};
 let game;
 let level;
 let click = false;
@@ -13,6 +29,7 @@ const pages = [
   "entree-3",
   "fortune-cookie-reveal",
   "fortune",
+  "nutrition-facts",
 ];
 const MealSrcs = [
   "source/imgs/bowl.png",
@@ -73,7 +90,6 @@ window.addEventListener("DOMContentLoaded", () => {
       hideAllPages();
       document.getElementById("side").style.display = "block";
       let mealImages = document.getElementsByClassName("current-item");
-      console.log(mealImages);
       for (let i = 0; i < mealImages.length; i++) {
         mealImages[i].src = MealSrcs[index];
       }
@@ -94,6 +110,13 @@ window.addEventListener("DOMContentLoaded", () => {
             game.incrementWeird();
             break;
         }
+        let j_fixed = j;
+        if (j == 4) {
+          j_fixed = Math.floor(Math.random() * 3) + 1;
+        }
+        let element = document.querySelector(`#option-${i}-${j_fixed}`);
+        let dishName = element.textContent.trim();
+        game.cumulateNutritions(nutritions[dishName]);
         choiceAudio();
         hideAllPages();
         if (i === level) {
@@ -112,6 +135,20 @@ window.addEventListener("DOMContentLoaded", () => {
     hideAllPages();
     document.getElementById("fortune").style.display = "block";
     showMessage();
+  });
+
+  addClickEvent("show-nutrition", () => {
+    click = false;
+    choiceAudio();
+    hideAllPages();
+    document.getElementById("nutrition-facts").style.display = "block";
+    for (let key in game.nutrition) {
+      // console.log(key);
+      document.getElementById(key).textContent =
+        game.nutrition[key] + nutritionUnits[key];
+      document.getElementById(key + "-prc").textContent =
+        Math.floor((game.nutrition[key] / nutritionDaily[key]) * 100) + "%";
+    }
   });
 });
 
