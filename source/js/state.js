@@ -1,17 +1,4 @@
-const gameObject = require("./fortunes.js");
-
-module.exports = {
-  game,
-  level,
-  click,
-  pages,
-  MealSrcs,
-  hideAllPages,
-  addClickEvent,
-  addClickEvent,
-  showMessage,
-  typeOutMessage,
-};
+import gameObject from "./fortunes.js";
 
 let game;
 let level;
@@ -131,3 +118,15 @@ function typeOutMessage(message) {
 
   typeNextCharacter();
 }
+
+export default {
+  game,
+  level,
+  click,
+  pages,
+  MealSrcs,
+  hideAllPages,
+  addClickEvent,
+  showMessage,
+  typeOutMessage,
+};
