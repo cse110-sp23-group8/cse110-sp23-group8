@@ -1,5 +1,24 @@
+/**
+ * The main game logic script, using the fortunes.js and nutrition.js modules
+ * @module state
+ */
+
+/**
+ * Imports the GameObject class from fortunes.js module
+ * @type {gameObject}
+ */
 import gameObject from "./fortunes.js";
+
+/**
+ * Imports the Nutritional imformation of each item from the nutrition.js module
+ * @type {Object}
+ */
 import nutritions from "../data/nutrition.js";
+
+/**
+ * Defines the units of measurement for the different nutrition properties
+ * @type {Object}
+ */
 const nutritionUnits = {
   calories: "",
   fat: "g",
@@ -8,6 +27,11 @@ const nutritionUnits = {
   sugars: "g",
   sodium: "mg",
 };
+
+/**
+ * Defines the recommended daily intake for the different nutrition properties
+ * @type {Object}
+ */
 const nutritionDaily = {
   calories: 2000,
   fat: 78,
@@ -16,10 +40,29 @@ const nutritionDaily = {
   sugars: 30,
   sodium: 2300,
 };
+
+/**
+ * The main game instance
+ * @type {gameObject}
+ */
 let game;
+
+/**
+ * The current game level
+ * @type {number}
+ */
 let level;
+
+/**
+ * A flag used to interrupt the fortune message typing
+ * @type {boolean}
+ */
 let click = false;
 
+/**
+ * The pages of the game UI
+ * @type {Array}
+ */
 const pages = [
   "front-page",
   "meal-size",
@@ -157,7 +200,10 @@ function showMessage() {
   typeOutMessage(message);
 }
 
-// type out the message
+/**
+ * Types out the given message one character at a time with a delay in between
+ * @param {string} message The message to type out
+ */
 function typeOutMessage(message) {
   const messageElement = document.getElementById("fortune-text");
 
