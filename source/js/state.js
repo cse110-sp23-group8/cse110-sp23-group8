@@ -1,21 +1,21 @@
 import gameObject from "./fortunes.js";
 import nutritions from "../data/nutrition.js";
 const nutritionUnits = {
-  "calories": "",
-  "fat": "g",
-  "carbohydrates": "g",
-  "protein": "g",
-  "sugars": "g",
-  "sodium": "mg",
-}
+  calories: "",
+  fat: "g",
+  carbohydrates: "g",
+  protein: "g",
+  sugars: "g",
+  sodium: "mg",
+};
 const nutritionDaily = {
-  "calories": 2000,
-  "fat":78,
-  "carbohydrates": 325,
-  "protein": 75,
-  "sugars": 30,
-  "sodium": 2300
-}
+  calories: 2000,
+  fat: 78,
+  carbohydrates: 325,
+  protein: 75,
+  sugars: 30,
+  sodium: 2300,
+};
 let game;
 let level;
 let click = false;
@@ -41,8 +41,6 @@ const AudioSrcs = [
   "source/music/ChoiceSelect2bV1.1.wav",
   "source/music/ChoiceSelect3bV1.1.wav",
 ];
-
-
 
 function hideAllPages() {
   pages.forEach(
@@ -146,12 +144,13 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("nutrition-facts").style.display = "block";
     for (let key in game.nutrition) {
       // console.log(key);
-      document.getElementById(key).textContent = game.nutrition[key] + nutritionUnits[key];
-      document.getElementById(key+"-prc").textContent = Math.floor(game.nutrition[key] / nutritionDaily[key] * 100) + "%";
+      document.getElementById(key).textContent =
+        game.nutrition[key] + nutritionUnits[key];
+      document.getElementById(key + "-prc").textContent =
+        Math.floor((game.nutrition[key] / nutritionDaily[key]) * 100) + "%";
     }
   });
 });
-
 
 function showMessage() {
   const message = game.getFortune();
@@ -171,7 +170,7 @@ function typeOutMessage(message) {
     }
     if (index < message.length) {
       messageElement.textContent += message.charAt(index);
-      index++;      
+      index++;
       setTimeout(typeNextCharacter, typingSpeed);
     }
   }

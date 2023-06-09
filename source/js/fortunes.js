@@ -4,12 +4,12 @@ class gameObject {
     this.score = 0;
     this.weird = 0;
     this.nutrition = {
-      "calories": 0,
-      "fat": 0,
-      "carbohydrates": 0,
-      "protein": 0,
-      "sugars": 0,
-      "sodium": 0
+      calories: 0,
+      fat: 0,
+      carbohydrates: 0,
+      protein: 0,
+      sugars: 0,
+      sodium: 0,
     };
     this.fortunes = {
       romantic: [
