@@ -39,6 +39,8 @@ header h1 {
 }
 
 main {
+  max-height: 90%;
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,6 +105,17 @@ button:hover {
   margin-right: 20px;
 }
 
+#meal-size,
+#side,
+#entree-1,
+#entree-2,
+#entree-3,
+#fortune-cookie-reveal,
+#fortune {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 #user-info {
   display: flex;
   flex-direction: column;
@@ -124,22 +137,24 @@ button:hover {
 #plate-button-container {
   display: flex;
   justify-content: space-around;
+  column-gap: 1.75%;
   align-items: center;
-  width: 100%;
-  margin-top: 40px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 #plate-button-container button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
   height: auto;
+  box-sizing: border-box;
 }
 
 #plate-button-container button img {
-  width: 250px;
-  height: 250px;
+  aspect-ratio: 1 / 1;
+  max-height: 250px;
+  max-width: 100%;
   align-items: center;
 }
 
@@ -151,8 +166,9 @@ button:hover {
 
 .current-item {
   padding: 10px;
-  width: 300px;
-  height: 300px;
+  aspect-ratio: 1/1;
+  height: fit-content;
+  max-height: 300px;
   margin-bottom: 20px;
 }
 
