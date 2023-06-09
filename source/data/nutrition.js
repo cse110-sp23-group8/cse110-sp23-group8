@@ -1,3 +1,13 @@
+/**
+ * An object representing the nutritional information of various dishes.
+ * @type {Object.<string, Object.<string, number>>}
+ * @property {number} calories - The number of calories in the dish.
+ * @property {number} fat - The amount of fat in the dish (in grams).
+ * @property {number} carbohydrates - The amount of carbohydrates in the dish (in grams).
+ * @property {number} protein - The amount of protein in the dish (in grams).
+ * @property {number} sugars - The amount of sugars in the dish (in grams).
+ * @property {number} sodium - The amount of sodium in the dish (in milligrams).
+ */
 export default {
   "Chow Mein": {
     calories: 500,
