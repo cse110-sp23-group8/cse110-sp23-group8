@@ -170,7 +170,7 @@ button:hover {
 }
 
 img.current-item {
-    max-height: 30vh
+  max-height: 30vh;
 }
 
 .current-item {
