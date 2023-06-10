@@ -137,6 +137,7 @@ window.addEventListener("DOMContentLoaded", () => {
         mealImages[i].src = MealSrcs[index];
       }
     });
+  });
 
   for (let i = 1; i <= 4; i++) {
     for (let j = 1; j <= 4; j++) {
@@ -162,10 +163,10 @@ window.addEventListener("DOMContentLoaded", () => {
         choiceAudio();
         hideAllPages();
         if (i === level) {
-            document.getElementById("fortune-cookie-reveal").style.display =
-              "block";
+          document.getElementById("fortune-cookie-reveal").style.display =
+            "block";
         } else {
-            document.getElementById(`entree-${i}`).style.display = "block";
+          document.getElementById(`entree-${i}`).style.display = "block";
         }
       });
     }
