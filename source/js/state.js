@@ -20,80 +20,17 @@ const MealSrcs = [
   "source/imgs/large plate.png",
 ];
 
-function hideAllPages() {
+export function hideAllPages() {
   pages.forEach(
     (page) => (document.getElementById(page).style.display = "none"),
   );
 }
 
-function addClickEvent(id, callback) {
+export function addClickEvent(id, callback) {
   document.getElementById(id).addEventListener("click", callback);
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-  addClickEvent("play", () => {
-    game = new gameObject();
-    hideAllPages();
-    document.getElementById("meal-size").style.display = "block";
-  });
-
-  addClickEvent("play-again", () => {
-    game = new gameObject();
-    hideAllPages();
-    document.getElementById("meal-size").style.display = "block";
-    const messageElement = document.getElementById("fortune-text");
-    messageElement.textContent = "";
-    click = true;
-  });
-
-  ["bowl", "plate", "large-plate"].forEach((id, index) => {
-    addClickEvent(id, () => {
-      //bowl = 0 + 2 (side + entree), plate = 1 + 2 (side + 2 entrees), large = 2 + 2 (side + 3 entrees)
-      level = index + 2;
-      hideAllPages();
-      document.getElementById("side").style.display = "block";
-      let mealImages = document.getElementsByClassName("current-item");
-      console.log(mealImages);
-      for (let i = 0; i < mealImages.length; i++) {
-        mealImages[i].src = MealSrcs[index];
-      }
-    });
-  });
-
-  for (let i = 1; i <= 4; i++) {
-    for (let j = 1; j <= 4; j++) {
-      addClickEvent(`option-${i}-${j}`, () => {
-        switch (j) {
-          case 1:
-            game.incrementScore();
-            break;
-          case 3:
-            game.decrementScore();
-            break;
-          case 4:
-            game.incrementWeird();
-            break;
-        }
-        hideAllPages();
-        if (i === level) {
-          document.getElementById("fortune-cookie-reveal").style.display =
-            "block";
-        } else {
-          document.getElementById(`entree-${i}`).style.display = "block";
-        }
-      });
-    }
-  }
-
-  addClickEvent("open", () => {
-    click = false;
-    hideAllPages();
-    document.getElementById("fortune").style.display = "block";
-    showMessage();
-  });
-});
-
-function showMessage() {
+export function showMessage() {
   const message = game.getFortune();
   typeOutMessage(message);
 }
@@ -119,14 +56,75 @@ function typeOutMessage(message) {
   typeNextCharacter();
 }
 
-export default {
-  game,
-  level,
-  click,
-  pages,
-  MealSrcs,
-  hideAllPages,
-  addClickEvent,
-  showMessage,
-  typeOutMessage,
-};
+// export default {
+//   game,
+//   level,
+//   click,
+//   pages,
+//   MealSrcs,
+//   function: hideAllPages, addClickEvent, showMessage, typeOutMessage};
+
+if(typeof window !== "undefined") {
+  window.addEventListener("DOMContentLoaded", () => {
+    addClickEvent("play", () => {
+      game = new gameObject();
+      hideAllPages();
+      document.getElementById("meal-size").style.display = "block";
+    });
+
+    addClickEvent("play-again", () => {
+      game = new gameObject();
+      hideAllPages();
+      document.getElementById("meal-size").style.display = "block";
+      const messageElement = document.getElementById("fortune-text");
+      messageElement.textContent = "";
+      click = true;
+    });
+
+    ["bowl", "plate", "large-plate"].forEach((id, index) => {
+      addClickEvent(id, () => {
+        //bowl = 0 + 2 (side + entree), plate = 1 + 2 (side + 2 entrees), large = 2 + 2 (side + 3 entrees)
+        level = index + 2;
+        hideAllPages();
+        document.getElementById("side").style.display = "block";
+        let mealImages = document.getElementsByClassName("current-item");
+        console.log(mealImages);
+        for (let i = 0; i < mealImages.length; i++) {
+          mealImages[i].src = MealSrcs[index];
+        }
+      });
+    });
+
+    for (let i = 1; i <= 4; i++) {
+      for (let j = 1; j <= 4; j++) {
+        addClickEvent(`option-${i}-${j}`, () => {
+          switch (j) {
+            case 1:
+              game.incrementScore();
+              break;
+            case 3:
+              game.decrementScore();
+              break;
+            case 4:
+              game.incrementWeird();
+              break;
+          }
+          hideAllPages();
+          if (i === level) {
+            document.getElementById("fortune-cookie-reveal").style.display =
+              "block";
+          } else {
+            document.getElementById(`entree-${i}`).style.display = "block";
+          }
+        });
+      }
+    }
+
+    addClickEvent("open", () => {
+      click = false;
+      hideAllPages();
+      document.getElementById("fortune").style.display = "block";
+      showMessage();
+    });
+  });
+}
