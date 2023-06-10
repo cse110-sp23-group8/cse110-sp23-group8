@@ -20,7 +20,7 @@ const MealSrcs = [
   "source/imgs/large plate.png",
 ];
 
-if(typeof window !== "undefined") {
+if (typeof window !== "undefined") {
   window.addEventListener("DOMContentLoaded", () => {
     addClickEvent("play", () => {
       game = new gameObject();
@@ -128,4 +128,3 @@ function typeOutMessage(message) {
 //   pages,
 //   MealSrcs,
 //   function: hideAllPages, addClickEvent, showMessage, typeOutMessage};
-
