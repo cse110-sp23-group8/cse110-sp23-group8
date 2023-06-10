@@ -169,11 +169,15 @@ button:hover {
   align-items: center;
 }
 
+img.current-item {
+    max-height: 30vh
+}
+
 .current-item {
   padding: 10px;
   aspect-ratio: 1/1;
   height: fit-content;
-  max-height: 300px;
+  max-height: min(300px, 30vh);
   margin-bottom: 20px;
 }
 
