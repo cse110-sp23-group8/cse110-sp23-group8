@@ -1,8 +1,22 @@
-// fortune objects
+/**
+ * A class representing a game object which handles score and fortune logic.
+ * @class
+ */
 class gameObject {
+  /**
+   * Constructs a new game object with a default score, nutrition, and pre-defined fortunes.
+   */
   constructor() {
     this.score = 0;
     this.weird = 0;
+    this.nutrition = {
+      calories: 0,
+      fat: 0,
+      carbohydrates: 0,
+      protein: 0,
+      sugars: 0,
+      sodium: 0,
+    };
     this.fortunes = {
       romantic: [
         "You and your partner will embark on a dreamy getaway together.",
@@ -211,18 +225,31 @@ class gameObject {
     return this.weird;
   }
 
+  /**
+   * Increment the score of the game.
+   */
   incrementScore() {
     this.score++;
   }
 
+  /**
+   * Decrement the score of the game.
+   */
   decrementScore() {
     this.score--;
   }
 
+  /**
+   * Increment the weirdness factor of the game.
+   */
   incrementWeird() {
     this.weird++;
   }
 
+  /**
+   * Get a fortune from the game object based on the current score and weirdness factor.
+   * @return {string} A randomly selected fortune.
+   */
   getFortune() {
     const weirdness = Math.floor(Math.random() * 4);
     const isWeird = weirdness < this.weird;
@@ -251,7 +278,23 @@ class gameObject {
       }
     }
   }
+
+  /**
+   * Cumulate the nutrition values of the game object with the nutrition values of a dish.
+   * @param {Object} dish An object representing a dish with nutrition values.
+   */
+  cumulateNutritions(dish) {
+    this.nutrition.calories += dish.calories;
+    this.nutrition.fat += dish.fat;
+    this.nutrition.carbohydrates += dish.carbohydrates;
+    this.nutrition.protein += dish.protein;
+    this.nutrition.sugars += dish.sugars;
+    this.nutrition.sodium += dish.sodium;
+    console.log(this.nutrition);
+  }
 }
 
-//module.exports = gameObject;
+/**
+ * Exports the gameObject class as a module.
+ */
 export default gameObject;

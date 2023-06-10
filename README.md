@@ -4,7 +4,7 @@ Team Page: https://github.com/cse110-sp23-group8/cse110-sp23-group8/blob/main/ad
 
 Project Page: https://cse110-sp23-group8.github.io/cse110-sp23-group8/
 
-Live Page for Program: https://cse110-sp23-group8.github.io/cse110-sp23-group8/
+JSDocs: https://cse110-sp23-group8.github.io/JSDocs/
 
 <h2>Required things to Install/Run Program</h2>
 
