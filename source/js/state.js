@@ -85,13 +85,13 @@ const AudioSrcs = [
   "source/music/ChoiceSelect3bV1.1.wav",
 ];
 
-function hideAllPages() {
+export function hideAllPages() {
   pages.forEach(
     (page) => (document.getElementById(page).style.display = "none"),
   );
 }
 
-function addClickEvent(id, callback) {
+export function addClickEvent(id, callback) {
   document.getElementById(id).addEventListener("click", callback);
 }
 
@@ -171,7 +171,6 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     }
   }
-
   addClickEvent("open", () => {
     click = false;
     choiceAudio();
@@ -195,7 +194,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function showMessage() {
+export function showMessage() {
   const message = game.getFortune();
   typeOutMessage(message);
 }

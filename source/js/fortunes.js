@@ -217,6 +217,14 @@ class gameObject {
     };
   }
 
+  getScore() {
+    return this.score;
+  }
+
+  getWeird() {
+    return this.weird;
+  }
+
   /**
    * Increment the score of the game.
    */
