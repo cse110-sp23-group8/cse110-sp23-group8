@@ -2,20 +2,20 @@ import gameObject from "../source/js/fortunes.js";
 
 // Test incrementScore
 
-test("Score should be 1", () => {
+test("Score should be 1(Increment)", () => {
   const testGame = new gameObject();
   testGame.incrementScore();
   expect(testGame.getScore()).toBe(1);
 });
 
-test("Score should be 2", () => {
+test("Score should be 2(Increment)", () => {
   const testGame = new gameObject();
   testGame.incrementScore();
   testGame.incrementScore();
   expect(testGame.getScore()).toBe(2);
 });
 
-test("Score should not be 2", () => {
+test("Score should not be 2(Increment)", () => {
   const testGame = new gameObject();
   testGame.incrementScore();
   testGame.incrementScore();
@@ -23,7 +23,7 @@ test("Score should not be 2", () => {
   expect(testGame.getScore() == 2).toBe(false);
 });
 
-test("Score should not be 3", () => {
+test("Score should not be 3(Increment)", () => {
   const testGame = new gameObject();
   testGame.incrementScore();
   testGame.incrementScore();
@@ -34,7 +34,7 @@ test("Score should not be 3", () => {
 
 // Test decrementScore
 
-test("Score should be 3", () => {
+test("Score should be 3(Decrement)", () => {
   const testGame = new gameObject();
   testGame.incrementScore();
   testGame.incrementScore();
@@ -44,7 +44,7 @@ test("Score should be 3", () => {
   expect(testGame.getScore() == 3).toBe(true);
 });
 
-test("Score should be 2", () => {
+test("Score should be 2(Decrement)", () => {
   const testGame = new gameObject();
   testGame.incrementScore();
   testGame.incrementScore();
@@ -55,7 +55,7 @@ test("Score should be 2", () => {
   expect(testGame.getScore() == 2).toBe(true);
 });
 
-test("Score should not be 2", () => {
+test("Score should not be 2(Decrement)", () => {
   const testGame = new gameObject();
   testGame.incrementScore();
   testGame.incrementScore();
@@ -67,7 +67,7 @@ test("Score should not be 2", () => {
   expect(testGame.getScore() == 2).toBe(false);
 });
 
-test("Score should not be 1", () => {
+test("Score should not be 1(Decrement)", () => {
   const testGame = new gameObject();
   testGame.incrementScore();
   testGame.incrementScore();
