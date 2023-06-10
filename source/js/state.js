@@ -20,50 +20,6 @@ const MealSrcs = [
   "source/imgs/large plate.png",
 ];
 
-export function hideAllPages() {
-  pages.forEach(
-    (page) => (document.getElementById(page).style.display = "none"),
-  );
-}
-
-export function addClickEvent(id, callback) {
-  document.getElementById(id).addEventListener("click", callback);
-}
-
-export function showMessage() {
-  const message = game.getFortune();
-  typeOutMessage(message);
-}
-
-// type out the message
-function typeOutMessage(message) {
-  const messageElement = document.getElementById("fortune-text");
-
-  let index = 0;
-  const typingSpeed = 30; // The delay (in milliseconds) between typing each character
-
-  function typeNextCharacter() {
-    if (click) {
-      return;
-    }
-    if (index < message.length) {
-      messageElement.textContent += message.charAt(index);
-      index++;
-      setTimeout(typeNextCharacter, typingSpeed);
-    }
-  }
-
-  typeNextCharacter();
-}
-
-// export default {
-//   game,
-//   level,
-//   click,
-//   pages,
-//   MealSrcs,
-//   function: hideAllPages, addClickEvent, showMessage, typeOutMessage};
-
 if(typeof window !== "undefined") {
   window.addEventListener("DOMContentLoaded", () => {
     addClickEvent("play", () => {
@@ -128,3 +84,48 @@ if(typeof window !== "undefined") {
     });
   });
 }
+
+export function hideAllPages() {
+  pages.forEach(
+    (page) => (document.getElementById(page).style.display = "none"),
+  );
+}
+
+export function addClickEvent(id, callback) {
+  document.getElementById(id).addEventListener("click", callback);
+}
+
+export function showMessage() {
+  const message = game.getFortune();
+  typeOutMessage(message);
+}
+
+// type out the message
+function typeOutMessage(message) {
+  const messageElement = document.getElementById("fortune-text");
+
+  let index = 0;
+  const typingSpeed = 30; // The delay (in milliseconds) between typing each character
+
+  function typeNextCharacter() {
+    if (click) {
+      return;
+    }
+    if (index < message.length) {
+      messageElement.textContent += message.charAt(index);
+      index++;
+      setTimeout(typeNextCharacter, typingSpeed);
+    }
+  }
+
+  typeNextCharacter();
+}
+
+// export default {
+//   game,
+//   level,
+//   click,
+//   pages,
+//   MealSrcs,
+//   function: hideAllPages, addClickEvent, showMessage, typeOutMessage};
+
