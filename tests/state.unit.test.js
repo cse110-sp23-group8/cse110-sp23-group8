@@ -1,4 +1,10 @@
-import { pages, hideAllPages, addClickEvent } from "../source/js/state.js";
+import {
+  game,
+  pages,
+  hideAllPages,
+  addClickEvent,
+  showMessage,
+} from "../source/js/state.js";
 
 // Test hideAllPages
 test("Function should hide every page", () => {
@@ -15,6 +21,7 @@ test("Function should hide every page", () => {
 test("addClickEvent should add click event to given element", () => {
   document.addEventListener("DOMContentLoaded", function () {
     addClickEvent("play", () => {
+      game = new gameObject();
       hideAllPages();
       document.getElementById("meal-size").style.display = "block";
     });
